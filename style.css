@@ -23,39 +23,43 @@ body {
 /* Font sizes */
 
 h1 {
-    font-size: 4em;
+    font-size: 2em;
 }
 
 h2 {
-    font-size: 2.5em;
-    line-height: 150%;
+    font-size: 1.8em;
+    /* line-height: 150%; */
 }
 
 h3 {
-    font-size: 2em;
-    line-height: 150%;
+    font-size: 1.2em;
+    /* line-height: 150%; */
+}
+
+p {
+    font-size: 0.8em;
 }
 
 .title-lg-m {
-    font-size: 2em;
-    line-height: 150%;
+    font-size: 1em;
+    /* line-height: 150%; */
 }
 
 .title-sm-m {
-    font-size: 1em;
-    line-height: 150%;
+    font-size: 0.7em;
+    /* line-height: 150%; */
 }
 
 .body-lg {
-    font-size: 1.25em;
+    font-size: 0.75em;
 }
 
 .body-sd {
-    font-size: 1.125em;
+    font-size: 0.625em;
 }
 
 .body-sm {
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 .blue-text {
@@ -101,7 +105,7 @@ nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 /* Hamburger icons */
@@ -117,6 +121,7 @@ nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .hero-text h6 span:first-child {
@@ -130,7 +135,6 @@ nav {
     align-items: center;
     border-radius: 32px;
     margin-right: 20px;
-    /* width: 113px; */
 }
 
 .hero-text h6 {
@@ -138,12 +142,11 @@ nav {
     height: 40px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 32px;
-    /* max-width: 275px; */
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .hero-text h1 {
@@ -157,8 +160,8 @@ nav {
 .btn {
     background-color: var(--btn-bg);
     color: white;
-    padding: 18px 24px;
-    font-size: 18px;
+    padding: 15px 21px;
+    font-size: 16px;
     border-radius: 32px;
     display: inline-block;
 }
@@ -179,10 +182,17 @@ nav {
     border-radius: 50%;
 }
 
+/* Hero Illustration */
+
+.hero-illustration img {
+    width: 100%;
+}
+
 /* Main */
 
 main {
-    padding: 100px 20px;
+    padding: 50px 20px;
+    /* position: relative; */
 }
 
 
@@ -194,7 +204,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .stat {
@@ -204,8 +214,8 @@ main {
 }
 
 .stat-icon {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
@@ -216,15 +226,20 @@ main {
 
 .stat-icon i {
     color: var(--stat--icon-colour);
-    font-size: 32px;
+    font-size: 28px;
 }
 
 /* Why section */
 
 .why-section {
     text-align: center;
-    padding: 75px 0px;
+    padding: 20px 0px 100px 0px;
     color: white;
+    position: relative;
+}
+
+.why-section-content {
+    margin-bottom: 300px;
 }
 
 .why-section p {
@@ -236,12 +251,21 @@ main {
 .floating-section {
     color: white;
     text-align: center;
+    position: absolute;
+    width: 80%;
+    bottom: -370px;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.floating-section p {
+    font-size: 0.8em;
 }
 
 .floating-inner-section {
     background-color: white;
     color: var(--main-bg);
-    padding: 48px 20px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0.1px black;
 }
@@ -253,7 +277,7 @@ main {
 }
 
 .floating-inner-section form > * {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .floating-inner-section form input {
@@ -262,7 +286,7 @@ main {
     width: 100%;
     padding: 5px;
     outline: none;
-    font-size: 18px;
+    font-size: 0.8em;
 }
 
 .floating-inner-section form select {
@@ -271,27 +295,30 @@ main {
     border-bottom: 1px solid black;
     padding: 5px;
     outline: none;
-    font-size: 18px;
+    font-size: 0.8em;
 }
 
 .floating-inner-section form input::placeholder {
     color: black;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 0.8em;
 }
 
 button.btn {
-    padding: 10px 20px;
+    padding: 8px 16px;
     border: none;
+    font-size: 0.8em;
 }
 
 /* Coin sections */
+
 
 .coin-section {
     color: var(--main-bg);
     background-color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px ;
+    padding-top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -300,6 +327,7 @@ button.btn {
 
 .coin-section h2 {
     margin-bottom: 65px;
+    font-size: 9vw;
 }
 
 .coin {
@@ -312,12 +340,14 @@ button.btn {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    max-width: 370px;
+    width: 100%;
 }
 
 .crypto-img {
     margin-bottom: 48px;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
 }
 
 .coin-name {
@@ -343,9 +373,47 @@ button.btn {
     border-radius: 50px;
 }
 
+/* Feature section */
+
+.features-section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.features-section > * {
+    margin: 50px 0;
+}
+
+.features-section .feature h2 {
+    margin-bottom: 10px;
+}
+
+.features-section p {
+    margin-bottom: 20px;
+}
+
+.features-section .feature-text {
+    margin-bottom: 30px;
+}
+
+
+.middle-feature .feature-text {
+    margin-bottom: 0;
+}
+
+.middle-feature .feature-img {
+    margin-bottom: 30px;
+}
+
+.features-section img {
+    width: 100%;
+}
 /* newsletter */
 
 .newsletter {
+    margin: 40px 0;
     background-color: var(--stat--icon-colour);
     color: white;
     display: flex;
