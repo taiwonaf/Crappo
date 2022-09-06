@@ -72,6 +72,11 @@ p {
 
 /* Header */
 
+header {
+    overflow: hidden;
+    position: relative;
+}
+
 /* Brand */
 
 .brand {
