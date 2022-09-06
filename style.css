@@ -91,7 +91,19 @@ p {
 }
 
 .nav-items {
-    display: none
+    display: block;
+    position: absolute;
+    background-color: var(--secondary-color);
+    top: 0;
+    bottom: 0;
+    left: 100px0;
+    text-align: center;   
+    height: 100vh;
+    overflow: hidden;
+    padding: 25px;
+    right: -1000px;
+    transition: 1s;
+    z-index: 99;
 }
 
 header {
@@ -105,7 +117,7 @@ nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 /* Hamburger icons */
@@ -555,4 +567,60 @@ footer .socials {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+/* Nav 0pen */
+
+.nav-open {
+    left: 0;
+    right: 0;
+    transition: 1s;
+}
+
+.nav-items .auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items .auth ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 240px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.nav-items .auth li {
+    margin-bottom: 0;
+}
+.auth-middle {
+    width: 2px;
+    background-color: white;
+    height: 30px;
+}
+
+.nav-items .btn {
+    padding: 10px 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-items li{
+    list-style: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.nav-items i {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 32px;
 }

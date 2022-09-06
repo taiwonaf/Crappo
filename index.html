@@ -16,8 +16,12 @@
                 <img src="/images/Logo.svg" alt="">
                 <span class="brand-name">CRAPPO</span>
             </div>
-            <div class="nav-items">
+            <div class="nav-items" id="nav-items">
+                <i class="fa-solid fa-rectangle-xmark" id="ham-close"></i>
                 <ul>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
                     <li>
                         <a href="#">Features</a>
                     </li>
@@ -27,16 +31,21 @@
                     <li>
                         <a href="#">Contact</a>
                     </li>
-                    <li>
-                        <a href="#">Login</a>
-                    </li>
-                    <li>
-                        <a href="#">Register</a>
-                    </li>
                 </ul>
+                <div class="auth">
+                    <ul>
+                        <li>
+                            <a href="#">Login</a>
+                        </li>
+                        <div class="auth-middle"></div>
+                        <li class="btn">
+                            <a href="#">Register</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="hambuger">
-                <span class="material-symbols-outlined">menu</span>
+                <span class="material-symbols-outlined" id="ham-open">menu</span>
             </div>
         </nav>
         <div class="hero">
@@ -293,5 +302,6 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
